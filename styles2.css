@@ -1,0 +1,120 @@
+body{
+	display: flex;
+	place-content: center;}
+.container{
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column wrap;
+	place-content: center;
+	width: 100%;
+	max-width: 500px;
+	padding: 25px 25px;
+	background: #303841;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: white;
+	font-size: 14px;}
+.contain{
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	place-content: center;}
+.containg-clipboard{
+	width: 100%;
+	display: flex;
+	margin-top: -5px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;}
+.content-before, .content-after, .content-before-1, .content-after-1{
+	width: 100%;
+	max-width: 22.5px;
+	transition: .2s;}
+.content-before img, .content-after img, .content-before-1 img, .content-after-1 img{
+	width: 100%;
+	cursor: pointer;}
+.content-after, .content-after-1{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;}
+.content-after.open{
+	visibility: visible;
+	opacity: 1;
+	transition: .3s;}
+.content-after-1.open{
+	visibility: visible;
+	opacity: 1;
+	transition: .3s;}
+.content-before{
+	visibility: visible;
+	opacity: 1;}
+.content-before.open{
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(1.025);
+	transition: .3s;}
+.content-before-2.open{
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(1.025);
+	transition: .3s;}
+.left-space{
+	margin-left: 15px;}
+.arrows{
+	margin-top: 35px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;}
+.forward{
+	width: 100%;
+	max-width: 22.5px;}
+.forward img{
+	width: 100%;
+	cursor: pointer;}
+h2{
+	font-size: 16px;
+	color: white;
+	letter-spacing: 1px;}
+.orange{
+	color: #F9AE50;
+	letter-spacing: 1px;
+	line-height: 18px;
+	font-size: 14px;}
+.purple{
+	color: #8E8AC6;
+	letter-spacing: 1px;
+	line-height: 18px;
+	font-size: 14px;}
+.red{
+	color: #EC6066;
+	letter-spacing: 1px;
+	line-height: 18px;
+	font-size: 14px;}
+.blue{
+	color: #60B4B4;
+	letter-spacing: 1px;
+	line-height: 18px;
+	font-size: 14px;}
+	
+/* BOTONES */
+
+.button-1{
+	all: unset;
+	border-radius: 6px;
+	cursor: pointer;
+	text-align: center;
+	width: 120px;
+	background: rgba(224, 224, 224, 1);
+	padding: 6.5px 0px;
+	color: rgba(63, 63, 63, 1);
+	transition: .2s;
+}
+
+.button-1:hover{
+	background: rgba(174, 174, 174, 1);
+	transition: .2s;
+}
+
+button:hover{
+	background: rgba(174, 174, 174, 1);
+	transition: .2s;
+}
